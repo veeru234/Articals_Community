@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="25098" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="25073"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ArticalsGridViewCollectionViewCell" id="gTV-IL-0wX" customClass="ArticalsGridViewCollectionViewCell" customModule="Articles_Community" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="180" height="170"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="180" height="170"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cd1-Bg-a01">
+                        <rect key="frame" x="0.0" y="0.0" width="180" height="170"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Im1-Vw-a02">
+                                <rect key="frame" x="10" y="10" width="160" height="89.666666666666671"/>
+                                <color key="backgroundColor" white="1" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" secondItem="Im1-Vw-a02" secondAttribute="width" multiplier="0.56" id="c04-Ar-a07"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="clipToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Peace, dignity and equality on a healthy planet" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lb1-Ds-a03">
+                                <rect key="frame" x="10" y="109.66666666666667" width="160" height="39.666666666666671"/>
+                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.13725490196078433" green="0.23921568627450979" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Im1-Vw-a02" firstAttribute="top" secondItem="Cd1-Bg-a01" secondAttribute="top" constant="10" id="c01-Tp-a04"/>
+                            <constraint firstItem="Im1-Vw-a02" firstAttribute="leading" secondItem="Cd1-Bg-a01" secondAttribute="leading" constant="10" id="c02-Ld-a05"/>
+                            <constraint firstAttribute="trailing" secondItem="Im1-Vw-a02" secondAttribute="trailing" constant="10" id="c03-Tr-a06"/>
+                            <constraint firstItem="Lb1-Ds-a03" firstAttribute="top" secondItem="Im1-Vw-a02" secondAttribute="bottom" constant="10" id="c05-Lt-a08"/>
+                            <constraint firstItem="Lb1-Ds-a03" firstAttribute="leading" secondItem="Im1-Vw-a02" secondAttribute="leading" id="c06-Ll-a09"/>
+                            <constraint firstItem="Lb1-Ds-a03" firstAttribute="trailing" secondItem="Im1-Vw-a02" secondAttribute="trailing" id="c07-Lr-a10"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Lb1-Ds-a03" secondAttribute="bottom" constant="12" id="c08-Lb-a11"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="Cd1-Bg-a01" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="k01-Ct-a12"/>
+                <constraint firstItem="Cd1-Bg-a01" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="k02-Cl-a13"/>
+                <constraint firstAttribute="trailing" secondItem="Cd1-Bg-a01" secondAttribute="trailing" id="k03-Cr-a14"/>
+                <constraint firstAttribute="bottom" secondItem="Cd1-Bg-a01" secondAttribute="bottom" id="k04-Cb-a15"/>
+            </constraints>
+            <size key="customSize" width="180" height="170"/>
+            <connections>
+                <outlet property="articalDescription" destination="Lb1-Ds-a03" id="o01-Ds-a16"/>
+                <outlet property="articalImage" destination="Im1-Vw-a02" id="o02-Im-a17"/>
+            </connections>
+            <point key="canvasLocation" x="140" y="120"/>
+        </collectionViewCell>
+    </objects>
+</document>
