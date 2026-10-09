@@ -142,7 +142,7 @@ class ArticalsListViewController: UIViewController {
     private func openSearch() {}
     
 
-    // MARK: - Data
+    // MARK: - Api Call Data
     
     private func fetchArticles(force: Bool = false, completion: (() -> Void)? = nil) {
 
